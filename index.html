@@ -125,9 +125,10 @@
                     <div class="timeline-content">
                         <h3>Estagiário em Desenvolvimento Mobile</h3>
                         <h4>Defesa Civil do Amazonas | 11/2025 - 03/2026</h4>
-                        <p>Desenvolvimento de um app de gestão de tarefas com Expo, React Native e TypeScript.
-                            Implementação da arquitetura MVVM, construção de interfaces integradas a APIs REST, além de
-                            recursos nativos como câmera e reconhecimento de voz.</p>
+                        <p>Desenvolvimento do Agente App (disponível na Play Store) para auxiliar no registro de
+                            entregas de cestas básicas e purificadores de água. Atuei em melhorias de UI/UX, resolução
+                            de bugs e gerenciamento de dados utilizando SQLite e Drizzle ORM com Expo, React Native e
+                            TypeScript.</p>
                     </div>
                 </div>
             </div>
@@ -143,7 +144,7 @@
                 <!-- Highlight Project: LoveValley -->
                 <div class="project-card highlight">
                     <div class="project-content">
-                        <h3 class="project-title">LoveValley (StardewLove)</h3>
+                        <h3 class="project-title">LoveValley</h3>
                         <p class="project-desc">
                             O companheiro definitivo para os jogadores de Stardew Valley. Uma ferramenta completa para
                             acompanhar rotinas, gerenciar preferências de presentes e monitorar o nível de
@@ -192,6 +193,31 @@
                                     <i class="ph-fill ph-heart heart-icon"></i>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project: Agente App -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Agente App (Defesa Civil)</h3>
+                        <p class="project-desc">
+                            Aplicativo desenvolvido para auxiliar os agentes da Defesa Civil a registrarem diversas
+                            demandas offline-first. Fui responsável por significativas melhorias de UI/UX, resolução de
+                            bugs e contato com banco de dados local utilizando SQLite e Drizzle ORM.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">SQLite</span>
+                            <span class="tag">Drizzle ORM</span>
+                            <span class="tag">UI/UX</span>
+                        </div>
+                        <div style="margin-top: 1.5rem;">
+                            <a href="https://play.google.com/store/apps/details?id=com.defesa_civil.agenteappworkflow&hl=pt_BR"
+                                target="_blank" rel="noopener noreferrer" class="btn btn-outline"
+                                style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; font-size: 0.9rem;">
+                                <i class="ph ph-google-play-logo" style="font-size: 1.2rem;"></i> Ver na Play Store
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -368,7 +394,7 @@
     <script>
         const canvas = document.getElementById('particle-canvas');
         const ctx = canvas.getContext('2d');
-        
+
         let width, height, particles;
 
         // Interação com o mouse
@@ -378,12 +404,12 @@
             radius: 150
         };
 
-        window.addEventListener('mousemove', function(event) {
+        window.addEventListener('mousemove', function (event) {
             mouse.x = event.x;
             mouse.y = event.y;
         });
-        
-        window.addEventListener('mouseout', function() {
+
+        window.addEventListener('mouseout', function () {
             mouse.x = undefined;
             mouse.y = undefined;
         });
@@ -392,7 +418,7 @@
             width = canvas.width = window.innerWidth;
             height = canvas.height = window.innerHeight;
             particles = [];
-            
+
             // Densidade boa para o efeito de constelação (1 a cada 9000 pixels)
             const numParticles = Math.floor((width * height) / 9000);
 
@@ -406,7 +432,7 @@
                 this.x = Math.random() * width;
                 this.y = Math.random() * height;
                 this.size = Math.random() * 2 + 1; // 1 a 3px (Bem visível)
-                this.speedX = Math.random() * 0.5 - 0.25; 
+                this.speedX = Math.random() * 0.5 - 0.25;
                 this.speedY = Math.random() * 0.5 - 0.25;
                 // Azul claro com alta opacidade
                 this.opacity = Math.random() * 0.5 + 0.3;
@@ -422,12 +448,12 @@
                     let dx = mouse.x - this.x;
                     let dy = mouse.y - this.y;
                     let distance = Math.sqrt(dx * dx + dy * dy);
-                    
+
                     if (distance < mouse.radius) {
                         const forceDirectionX = dx / distance;
                         const forceDirectionY = dy / distance;
                         const force = (mouse.radius - distance) / mouse.radius;
-                        
+
                         this.x -= forceDirectionX * force * 2;
                         this.y -= forceDirectionY * force * 2;
                     }
