@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Davi Sobreira Brasil | Desenvolvedor Mobile</title>
-    <meta name="description" content="Portfólio de Davi Sobreira Brasil, Desenvolvedor Mobile focado em iOS e React Native.">
-    
+    <meta name="description"
+        content="Portfólio de Davi Sobreira Brasil, Desenvolvedor Mobile focado em iOS e React Native.">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    
+
     <!-- Icons (Phosphor Icons Web Font) -->
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
 </head>
+
 <body>
+
+    <!-- Partículas de Fundo (Constelação) -->
+    <canvas id="particle-canvas"></canvas>
 
     <!-- Header -->
     <header>
@@ -26,11 +32,11 @@
                 <i class="ph ph-code"></i>
                 Davi <span>Brasil</span>
             </a>
-            
+
             <!-- CSS Only Mobile Menu -->
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
             <label for="menu-toggle" class="menu-icon"><i class="ph ph-list"></i></label>
-            
+
             <ul class="nav-links">
                 <li><a href="#sobre">Sobre Mim</a></li>
                 <li><a href="#experiencia">Experiência</a></li>
@@ -46,10 +52,14 @@
         <div class="hero-bg"></div>
         <div class="container">
             <div class="hero-content">
-                <span class="greeting">Olá, seja bem-vindo(a)</span>
-                <h1 class="hero-title">Transformando ideias em experiências <span>mobile</span> intuitivas.</h1>
+                <span class="greeting">Olá, seja bem-vindo(a) ao meu portfólio!</span>
+                <h1 class="hero-title">Eu sou <span class="typewriter">Davi Brasil</span><br>Desenvolvedor
+                    <span>Mobile</span>.
+                </h1>
                 <p class="hero-desc">
-                    Sou Davi Sobreira Brasil, Desenvolvedor Mobile focado no ecossistema Apple (iOS) e soluções multiplataforma. Construo aplicativos que unem alta performance, arquitetura sólida e um design de interfaces impecável.
+                    Sou Davi Sobreira Brasil, Desenvolvedor Mobile focado no ecossistema Apple (iOS) e soluções
+                    multiplataforma. Construo aplicativos que unem alta performance, arquitetura sólida e um design de
+                    interfaces impecável.
                 </p>
                 <div class="btn-group">
                     <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
@@ -65,18 +75,22 @@
             <h2 class="section-title">Sobre Mim</h2>
             <div class="about-grid">
                 <div class="about-img-wrapper">
-                    <!-- Placeholder profissional focado em tech/ambiente de trabalho -->
-                    <img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?q=80&w=800&auto=format&fit=crop" alt="Davi Sobreira Brasil" class="about-img">
+                    <!-- Foto do Perfil -->
+                    <img src="assets/foto-davi.jpeg" alt="Davi Sobreira Brasil" class="about-img">
                 </div>
                 <div class="about-text">
-                    <h3>Desenvolvedor Apaixonado por UI/UX</h3>
+                    <h3>Desenvolvedor Apaixonado por Mobile</h3>
                     <p>
-                        Com uma base técnica sólida que vai da Mecatrônica até a Engenharia de Software, combino o rigor do raciocínio lógico com uma visão estética e centrada no usuário.
+                        Com uma base técnica sólida que vai da Mecatrônica até a Engenharia de Software, combino o rigor
+                        do raciocínio lógico com uma visão estética e centrada no usuário.
                     </p>
                     <p>
-                        Meu foco principal está no desenvolvimento de aplicações móveis robustas, trabalhando ativamente tanto no ecossistema nativo da Apple (Swift/SwiftUI) quanto em ambientes multiplataforma utilizando React Native. Aplico princípios modernos de design e arquiteturas limpas (como MVVM) para garantir a melhor experiência possível.
+                        Meu foco principal está no desenvolvimento de aplicações móveis robustas, trabalhando ativamente
+                        tanto no ecossistema nativo da Apple (Swift/SwiftUI) quanto em ambientes multiplataforma
+                        utilizando React Native. Aplico princípios modernos de design e arquiteturas limpas (como MVVM)
+                        para garantir a melhor experiência possível.
                     </p>
-                    
+
                     <div class="education">
                         <h4>Formação Acadêmica</h4>
                         <div class="edu-item">
@@ -102,14 +116,18 @@
                     <div class="timeline-content">
                         <h3>Desenvolvedor iOS</h3>
                         <h4>Apple Developer Academy - Eldorado | 03/2026 - Presente</h4>
-                        <p>Participo de um programa internacional focado no desenvolvimento prático para o ecossistema Apple. Trabalho com metodologias ágeis, design de produto e equipes multidisciplinares, aprimorando habilidades em UI/UX e prototipação de soluções reais.</p>
+                        <p>Participo de um programa internacional focado no desenvolvimento prático para o ecossistema
+                            Apple. Trabalho com metodologias ágeis, design de produto e equipes multidisciplinares,
+                            aprimorando habilidades em UI/UX e prototipação de soluções reais.</p>
                     </div>
                 </div>
                 <div class="timeline-item right">
                     <div class="timeline-content">
                         <h3>Estagiário em Desenvolvimento Mobile</h3>
                         <h4>Defesa Civil do Amazonas | 11/2025 - 03/2026</h4>
-                        <p>Desenvolvimento de um app de gestão de tarefas com Expo, React Native e TypeScript. Implementação da arquitetura MVVM, construção de interfaces integradas a APIs REST, além de recursos nativos como câmera e reconhecimento de voz.</p>
+                        <p>Desenvolvimento de um app de gestão de tarefas com Expo, React Native e TypeScript.
+                            Implementação da arquitetura MVVM, construção de interfaces integradas a APIs REST, além de
+                            recursos nativos como câmera e reconhecimento de voz.</p>
                     </div>
                 </div>
             </div>
@@ -121,13 +139,16 @@
         <div class="container">
             <h2 class="section-title">Projetos de Destaque</h2>
             <div class="projects-grid">
-                
+
                 <!-- Highlight Project: LoveValley -->
                 <div class="project-card highlight">
                     <div class="project-content">
                         <h3 class="project-title">LoveValley (StardewLove)</h3>
                         <p class="project-desc">
-                            O companheiro definitivo para os jogadores de Stardew Valley. Uma ferramenta completa para acompanhar rotinas, gerenciar preferências de presentes e monitorar o nível de relacionamento com os personagens do jogo. O projeto abrangeu desde rascunhos de design no Figma até a implementação nativa de alto nível.
+                            O companheiro definitivo para os jogadores de Stardew Valley. Uma ferramenta completa para
+                            acompanhar rotinas, gerenciar preferências de presentes e monitorar o nível de
+                            relacionamento com os personagens do jogo. O projeto abrangeu desde rascunhos de design no
+                            Figma até a implementação nativa de alto nível.
                         </p>
                         <div class="project-tags">
                             <span class="tag">SwiftUI</span>
@@ -180,7 +201,8 @@
                     <div class="project-content">
                         <h3 class="project-title">Vaga Certa</h3>
                         <p class="project-desc">
-                            Sistema de visão computacional para detecção automática de vagas de estacionamento disponíveis em tempo real através de câmeras, integrado a um painel web dinâmico.
+                            Sistema de visão computacional para detecção automática de vagas de estacionamento
+                            disponíveis em tempo real através de câmeras, integrado a um painel web dinâmico.
                         </p>
                         <div class="project-tags">
                             <span class="tag">Python</span>
@@ -196,7 +218,8 @@
                     <div class="project-content">
                         <h3 class="project-title">Lista de Compras</h3>
                         <p class="project-desc">
-                            Aplicativo mobile desenhado com foco absoluto em usabilidade. Possui um CRUD completo (adicionar, pesquisar, concluir e remover) em uma interface organizada e livre de atritos.
+                            Aplicativo mobile desenhado com foco absoluto em usabilidade. Possui um CRUD completo
+                            (adicionar, pesquisar, concluir e remover) em uma interface organizada e livre de atritos.
                         </p>
                         <div class="project-tags">
                             <span class="tag">React Native</span>
@@ -215,7 +238,7 @@
         <div class="container">
             <h2 class="section-title">Habilidades Técnicas</h2>
             <div class="skills-grid">
-                
+
                 <div class="skill-card">
                     <i class="ph ph-device-mobile skill-icon"></i>
                     <h4>Desenvolvimento Mobile</h4>
@@ -232,6 +255,7 @@
                     <h4>Linguagens</h4>
                     <ul class="skill-list">
                         <li>TypeScript / JavaScript</li>
+                        <li>Swift</li>
                         <li>Python</li>
                         <li>C / C++</li>
                         <li>SQL</li>
@@ -261,24 +285,29 @@
                 <div class="contact-info">
                     <h3>Disponível para novos desafios</h3>
                     <p>
-                        Atualmente sediado em Manaus, AM. Tenho profundo interesse em participar de projetos inovadores no desenvolvimento mobile e soluções com foco na interface do usuário. Sinta-se à vontade para me mandar uma mensagem!
+                        Atualmente sediado em Manaus, AM. Tenho profundo interesse em participar de projetos inovadores
+                        no desenvolvimento mobile e soluções com foco na interface do usuário. Sinta-se à vontade para
+                        me mandar uma mensagem!
                     </p>
                     <div class="contact-links">
-                        <a href="mailto:contato@exemplo.com" class="contact-link">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=davi.sobreira2005@gmail.com"
+                            target="_blank" rel="noopener noreferrer" class="contact-link">
                             <i class="ph ph-envelope-simple"></i>
-                            contato@exemplo.com
+                            davi.sobreira2005@gmail.com
                         </a>
-                        <a href="#" class="contact-link">
+                        <a href="https://www.linkedin.com/in/davi-brasiil/" target="_blank" rel="noopener noreferrer"
+                            class="contact-link">
                             <i class="ph ph-linkedin-logo"></i>
-                            /in/davisobreirabrasil
+                            /in/davi-brasiil/
                         </a>
-                        <a href="#" class="contact-link">
+                        <a href="https://github.com/Davibrasil05" target="_blank" rel="noopener noreferrer"
+                            class="contact-link">
                             <i class="ph ph-github-logo"></i>
-                            /davisbrasil
+                            /Davibrasil05
                         </a>
                     </div>
                 </div>
-                
+
                 <form action="#" class="contact-form">
                     <div class="form-group">
                         <label for="name">Nome Completo</label>
@@ -292,7 +321,8 @@
                         <label for="message">Mensagem</label>
                         <textarea id="message" placeholder="Como posso ajudar?" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Enviar Mensagem</button>
+                    <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Enviar
+                        Mensagem</button>
                 </form>
             </div>
         </div>
@@ -304,6 +334,151 @@
             <p>&copy; 2026 Davi Sobreira Brasil. Todos os direitos reservados.</p>
         </div>
     </footer>
+    <!-- Script para Animações de Scroll -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Selecionar todos os elementos principais do site
+            const elementsToAnimate = document.querySelectorAll('.section-title, .about-img-wrapper, .about-text, .timeline-item, .project-card, .skill-card, .contact-info, .contact-form, .hero-content');
 
+            // Adicionar a classe base
+            elementsToAnimate.forEach(el => {
+                el.classList.add('fade-scroll');
+            });
+
+            // Configurar o observador
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    } else {
+                        // Remove a classe para realizar o fade out quando sair da tela
+                        entry.target.classList.remove('is-visible');
+                    }
+                });
+            }, {
+                threshold: 0.15 // Dispara a animação quando 15% aparecer
+            });
+
+            // Iniciar observação
+            elementsToAnimate.forEach((el) => observer.observe(el));
+        });
+    </script>
+
+    <!-- Script para as Partículas de Fundo (Constelação) -->
+    <script>
+        const canvas = document.getElementById('particle-canvas');
+        const ctx = canvas.getContext('2d');
+        
+        let width, height, particles;
+
+        // Interação com o mouse
+        let mouse = {
+            x: null,
+            y: null,
+            radius: 150
+        };
+
+        window.addEventListener('mousemove', function(event) {
+            mouse.x = event.x;
+            mouse.y = event.y;
+        });
+        
+        window.addEventListener('mouseout', function() {
+            mouse.x = undefined;
+            mouse.y = undefined;
+        });
+
+        function initParticles() {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+            particles = [];
+            
+            // Densidade boa para o efeito de constelação (1 a cada 9000 pixels)
+            const numParticles = Math.floor((width * height) / 9000);
+
+            for (let i = 0; i < numParticles; i++) {
+                particles.push(new Particle());
+            }
+        }
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * width;
+                this.y = Math.random() * height;
+                this.size = Math.random() * 2 + 1; // 1 a 3px (Bem visível)
+                this.speedX = Math.random() * 0.5 - 0.25; 
+                this.speedY = Math.random() * 0.5 - 0.25;
+                // Azul claro com alta opacidade
+                this.opacity = Math.random() * 0.5 + 0.3;
+                this.color = 'rgba(0, 168, 232, ';
+            }
+
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+
+                // Efeito de repulsão com o mouse
+                if (mouse.x != null) {
+                    let dx = mouse.x - this.x;
+                    let dy = mouse.y - this.y;
+                    let distance = Math.sqrt(dx * dx + dy * dy);
+                    
+                    if (distance < mouse.radius) {
+                        const forceDirectionX = dx / distance;
+                        const forceDirectionY = dy / distance;
+                        const force = (mouse.radius - distance) / mouse.radius;
+                        
+                        this.x -= forceDirectionX * force * 2;
+                        this.y -= forceDirectionY * force * 2;
+                    }
+                }
+
+                if (this.x < 0 || this.x > width) this.speedX *= -1;
+                if (this.y < 0 || this.y > height) this.speedY *= -1;
+            }
+
+            draw() {
+                ctx.fillStyle = this.color + this.opacity + ')';
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function connectParticles() {
+            for (let a = 0; a < particles.length; a++) {
+                for (let b = a; b < particles.length; b++) {
+                    let dx = particles[a].x - particles[b].x;
+                    let dy = particles[a].y - particles[b].y;
+                    let distance = (dx * dx) + (dy * dy);
+
+                    if (distance < 15000) {
+                        let opacity = 1 - (distance / 15000);
+                        ctx.strokeStyle = 'rgba(0, 168, 232, ' + (opacity * 0.3) + ')'; // Linhas visíveis
+                        ctx.lineWidth = 1;
+                        ctx.beginPath();
+                        ctx.moveTo(particles[a].x, particles[a].y);
+                        ctx.lineTo(particles[b].x, particles[b].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, width, height);
+            for (let particle of particles) {
+                particle.update();
+                particle.draw();
+            }
+            connectParticles();
+            requestAnimationFrame(animateParticles);
+        }
+
+        window.addEventListener('resize', initParticles);
+        initParticles();
+        animateParticles();
+    </script>
 </body>
+
 </html>
