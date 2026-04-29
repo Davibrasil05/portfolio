@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davi Sobreira Brasil | Desenvolvedor Mobile</title>
+    <meta name="description" content="Portfólio de Davi Sobreira Brasil, Desenvolvedor Mobile focado em iOS e React Native.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Icons (Phosphor Icons Web Font) -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="ph ph-code"></i>
+                Davi <span>Brasil</span>
+            </a>
+            
+            <!-- CSS Only Mobile Menu -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon"><i class="ph ph-list"></i></label>
+            
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="greeting">Olá, seja bem-vindo(a)</span>
+                <h1 class="hero-title">Transformando ideias em experiências <span>mobile</span> intuitivas.</h1>
+                <p class="hero-desc">
+                    Sou Davi Sobreira Brasil, Desenvolvedor Mobile focado no ecossistema Apple (iOS) e soluções multiplataforma. Construo aplicativos que unem alta performance, arquitetura sólida e um design de interfaces impecável.
+                </p>
+                <div class="btn-group">
+                    <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+                    <a href="#contato" class="btn btn-outline">Fale Comigo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mim -->
+    <section id="sobre">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-grid">
+                <div class="about-img-wrapper">
+                    <!-- Placeholder profissional focado em tech/ambiente de trabalho -->
+                    <img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?q=80&w=800&auto=format&fit=crop" alt="Davi Sobreira Brasil" class="about-img">
+                </div>
+                <div class="about-text">
+                    <h3>Desenvolvedor Apaixonado por UI/UX</h3>
+                    <p>
+                        Com uma base técnica sólida que vai da Mecatrônica até a Engenharia de Software, combino o rigor do raciocínio lógico com uma visão estética e centrada no usuário.
+                    </p>
+                    <p>
+                        Meu foco principal está no desenvolvimento de aplicações móveis robustas, trabalhando ativamente tanto no ecossistema nativo da Apple (Swift/SwiftUI) quanto em ambientes multiplataforma utilizando React Native. Aplico princípios modernos de design e arquiteturas limpas (como MVVM) para garantir a melhor experiência possível.
+                    </p>
+                    
+                    <div class="education">
+                        <h4>Formação Acadêmica</h4>
+                        <div class="edu-item">
+                            <strong>Bacharelado em Engenharia de Software</strong>
+                            <span>Centro Universitário Fametro (02/2024 - 12/2028)</span>
+                        </div>
+                        <div class="edu-item">
+                            <strong>Técnico em Mecatrônica</strong>
+                            <span>Instituto Federal do Amazonas (02/2021 - 12/2023)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiência -->
+    <section id="experiencia" style="background-color: var(--color-bg-dark)">
+        <div class="container">
+            <h2 class="section-title">Experiência Profissional</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Desenvolvedor iOS</h3>
+                        <h4>Apple Developer Academy - Eldorado | 03/2026 - Presente</h4>
+                        <p>Participo de um programa internacional focado no desenvolvimento prático para o ecossistema Apple. Trabalho com metodologias ágeis, design de produto e equipes multidisciplinares, aprimorando habilidades em UI/UX e prototipação de soluções reais.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>Estagiário em Desenvolvimento Mobile</h3>
+                        <h4>Defesa Civil do Amazonas | 11/2025 - 03/2026</h4>
+                        <p>Desenvolvimento de um app de gestão de tarefas com Expo, React Native e TypeScript. Implementação da arquitetura MVVM, construção de interfaces integradas a APIs REST, além de recursos nativos como câmera e reconhecimento de voz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos">
+        <div class="container">
+            <h2 class="section-title">Projetos de Destaque</h2>
+            <div class="projects-grid">
+                
+                <!-- Highlight Project: LoveValley -->
+                <div class="project-card highlight">
+                    <div class="project-content">
+                        <h3 class="project-title">LoveValley (StardewLove)</h3>
+                        <p class="project-desc">
+                            O companheiro definitivo para os jogadores de Stardew Valley. Uma ferramenta completa para acompanhar rotinas, gerenciar preferências de presentes e monitorar o nível de relacionamento com os personagens do jogo. O projeto abrangeu desde rascunhos de design no Figma até a implementação nativa de alto nível.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">SwiftUI</span>
+                            <span class="tag">Core Data</span>
+                            <span class="tag">Figma</span>
+                            <span class="tag">iOS Nativo</span>
+                        </div>
+                    </div>
+                    <div class="project-visual">
+                        <!-- Mockup CSS Puro - Representação Visual do App -->
+                        <div class="css-phone">
+                            <div class="phone-notch"></div>
+                            <div class="phone-screen">
+                                <div class="app-header">
+                                    <span class="app-title">LoveValley</span>
+                                    <i class="ph-fill ph-magnifying-glass" style="color:#fff"></i>
+                                </div>
+                                <!-- Cards Mockados -->
+                                <div class="app-card">
+                                    <div class="app-avatar" style="background:#FFA07A"></div>
+                                    <div class="app-info">
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <i class="ph-fill ph-heart heart-icon"></i>
+                                </div>
+                                <div class="app-card">
+                                    <div class="app-avatar" style="background:#9370DB"></div>
+                                    <div class="app-info">
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <i class="ph-fill ph-heart heart-icon" style="color: rgba(255,255,255,0.3)"></i>
+                                </div>
+                                <div class="app-card">
+                                    <div class="app-avatar" style="background:#20B2AA"></div>
+                                    <div class="app-info">
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                    <i class="ph-fill ph-heart heart-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project: Vaga Certa -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Vaga Certa</h3>
+                        <p class="project-desc">
+                            Sistema de visão computacional para detecção automática de vagas de estacionamento disponíveis em tempo real através de câmeras, integrado a um painel web dinâmico.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">OpenCV</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project: Lista de Compras -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Lista de Compras</h3>
+                        <p class="project-desc">
+                            Aplicativo mobile desenhado com foco absoluto em usabilidade. Possui um CRUD completo (adicionar, pesquisar, concluir e remover) em uma interface organizada e livre de atritos.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Expo</span>
+                            <span class="tag">TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" style="background-color: var(--color-bg-alt)">
+        <div class="container">
+            <h2 class="section-title">Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                
+                <div class="skill-card">
+                    <i class="ph ph-device-mobile skill-icon"></i>
+                    <h4>Desenvolvimento Mobile</h4>
+                    <ul class="skill-list">
+                        <li>iOS (Swift / SwiftUI)</li>
+                        <li>React Native / Expo</li>
+                        <li>Arquitetura MVVM</li>
+                        <li>Core Data</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <i class="ph ph-code-block skill-icon"></i>
+                    <h4>Linguagens</h4>
+                    <ul class="skill-list">
+                        <li>TypeScript / JavaScript</li>
+                        <li>Python</li>
+                        <li>C / C++</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <i class="ph ph-paint-brush-broad skill-icon"></i>
+                    <h4>Design & Ferramentas</h4>
+                    <ul class="skill-list">
+                        <li>UI/UX Design</li>
+                        <li>Figma & Prototipação</li>
+                        <li>Visão Computacional (OpenCV)</li>
+                        <li>Git / GitHub</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+        <div class="container">
+            <h2 class="section-title">Vamos Conversar?</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Disponível para novos desafios</h3>
+                    <p>
+                        Atualmente sediado em Manaus, AM. Tenho profundo interesse em participar de projetos inovadores no desenvolvimento mobile e soluções com foco na interface do usuário. Sinta-se à vontade para me mandar uma mensagem!
+                    </p>
+                    <div class="contact-links">
+                        <a href="mailto:contato@exemplo.com" class="contact-link">
+                            <i class="ph ph-envelope-simple"></i>
+                            contato@exemplo.com
+                        </a>
+                        <a href="#" class="contact-link">
+                            <i class="ph ph-linkedin-logo"></i>
+                            /in/davisobreirabrasil
+                        </a>
+                        <a href="#" class="contact-link">
+                            <i class="ph ph-github-logo"></i>
+                            /davisbrasil
+                        </a>
+                    </div>
+                </div>
+                
+                <form action="#" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" placeholder="Como posso ajudar?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Davi Sobreira Brasil. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
